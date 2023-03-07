@@ -59,6 +59,7 @@ section {
   padding-bottom: 0;
   color: #ffffff;
   background-color: #000000;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .section-title p {
@@ -487,6 +488,10 @@ section {
   position: relative;
   margin-bottom: -40px;
   text-align: center;
+}
+
+.about h2{
+  font-family: 'Times New Roman', Times, serif;
 }
 .about h3 {
   font-weight: 400;
