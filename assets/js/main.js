@@ -209,4 +209,12 @@
     }
   });
 
+
 })()
+
+  /**
+   * Mobile Hamburger Icon
+   */
+  function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+  }
