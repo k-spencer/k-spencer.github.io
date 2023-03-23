@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-  color: #00d3b8;
+  color: white;
   text-decoration: none;
 }
 
@@ -320,6 +320,8 @@ ul li{
 
 #hero h1 .altcolor {
   color:red;
+  font-size: 1.2em;
+  letter-spacing: -2px;
 }
 
 #hero .logo{
@@ -375,7 +377,7 @@ ul li{
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 40px;
-    line-height: 25px;
+    line-height: 30px;
   }
 
   #hero h2 {
@@ -433,6 +435,7 @@ ul li{
 .about .altcolor{
   color: red;
 }
+
 
 @media only screen and (max-width: 600px) {
 
