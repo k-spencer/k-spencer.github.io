@@ -11,8 +11,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #777;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 a {
@@ -40,17 +40,17 @@ h6,
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .section-bg {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
-  background-color: #000000;
+  /*padding-bottom: 30px;*/
+  
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -59,14 +59,14 @@ section {
   font-weight: 300;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .section-title p {
   margin-bottom: 0;
-  color: #fff;
+  color: #000000;
+  
 }
 
 /*--------------------------------------------------------------
@@ -149,7 +149,7 @@ section {
 }
 
 .back-to-top:hover {
-  background: grey;
+  background: rgb(0, 0, 0);
   color: #fff;
 }
 
@@ -168,7 +168,8 @@ header a {
 
 header {
   padding: 0 20px;
-  background-color: red;
+  background-color: rgb(213, 29, 29);
+  /*background-image: url(https://www.elmstreettattoo.com/wp-content/themes/est/assets/images/bg-header.2fac82ffa0.png);*/
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -186,7 +187,7 @@ header {
 }
 
 #brand a {
-  color: black;
+  color: rgb(0, 0, 0);
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -201,7 +202,7 @@ ul{
 }
 
 ul a{
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 ul li{
@@ -330,11 +331,18 @@ ul li{
 #hero {
   width: 100%;
   height: 75vh;
-  /*background: url("../img/Untitled_Artwork.jpg") top center;*/
-  /*background-size: cover;*/
-  background:#000000;
-  position: relative; 
+  background-size:cover;
+  position: relative;  
 }
+
+/*#hero img.bg {
+  height: 100%;
+  width: 100%;
+  position:static;
+  top: 0;
+  left: 0; 
+}
+/*
 
 /*#hero:before {
   content: "";
@@ -366,7 +374,7 @@ ul li{
   font-size: 75px;
   font-weight: 300;
   line-height: 56px;
-  color: #fff;
+  color: #000000;
   font-family: 'Times New Roman', Times, serif;
 
 }
@@ -376,6 +384,7 @@ ul li{
   font-size: 1.2em;
   letter-spacing: -1px;
 }
+
 
 #hero .logo{
   text-decoration-line:underline white;
@@ -395,9 +404,10 @@ ul li{
 
 #hero p {
   margin: 0 0 100px 0;
-  color: #eee;
+  color: #000000;
   font-size: 20px;
   font-weight: 300;
+  font-style: italic;
   position: absolute;
   bottom: 0px;
 }
@@ -411,8 +421,8 @@ ul li{
   padding: 8px 28px 10px 28px;
   border-radius: 50px;
   transition: 0.5s;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #000000;
+  color: #000000;
 }
 
 #hero .btn-get-started:hover {
@@ -445,15 +455,24 @@ ul li{
 --------------------------------------------------------------*/
 .about {
   width: 100%;
-  background: rgba(0, 0, 0, 0.993);
+  background:#ffffff;
   background-size: cover;
   position: relative;
   margin-bottom: -60px;
-  text-align: center;
+  
+  background-color: rgb(255, 255, 255);
+}
+
+.about .section-title {
+  display: grid;
+  align-items:center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
 }
 
 .about h2{
   font-family: 'Times New Roman', Times, serif;
+  text-align: center;
 }
 .about h3 {
   font-weight: 400;
@@ -478,6 +497,7 @@ ul li{
 
 .about p {
   font-size: 25px;
+  background-color: rgb(255, 255, 255);
 
 }
 
@@ -490,10 +510,18 @@ ul li{
 }
 
 .about img{
-  max-width: 50%;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: rgb(98, 98, 98);
+  /*border-radius: 50%;*/ 
   
 }
+
+
+.about text{
+  font-size: 70px;
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -503,12 +531,22 @@ ul li{
   .about img{
     max-width: 100%;
   }
+
+  .about .section-title {
+    display:block;
+    align-items:center;
+  }
   
 }
 
 /*--------------------------------------------------------------
 # team bio
 --------------------------------------------------------------*/
+
+.bio {
+  background: rgba(255, 255, 255, 0.993);
+}
+
 .bio .portfolio img{
   max-width: 60%;
   border-radius: 50%;
@@ -559,7 +597,7 @@ ul li{
 }
 
 .services .title a {
-  color: #343a40;
+  color: #27292b;
   transition: 0.3s;
 }
 
@@ -838,9 +876,10 @@ ul li{
 
 .team{
   text-align: center;
+  background-color:#ffffff
 }
 .team .altcolor{
-  color:red
+  color:rgb(228, 3, 3)
 }
 .team .member img {
   max-width: 60%;
@@ -887,7 +926,7 @@ ul li{
   padding-top: 10px;
   font-size: 14px;
   font-style: italic;
-  color: #aaaaaa;
+  color: #5f5f5f;
 }
 
 .team .member .social {
@@ -924,7 +963,8 @@ ul li{
 .contact{
 
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
+
   
 }
 .contact .contact-about h3 {
@@ -966,14 +1006,15 @@ ul li{
   border: 1px solid red;*/
 }
 
-.contact .social-links a:hover {
+/*.contact .social-links a:hover {
   background: black;
   color: red;
-}
+}*/
 
 .contact .info {
-  color: #d7d7d7;
+  color: #000000;
   text-align: center;
+  
 }
 
 .contact .info i {
