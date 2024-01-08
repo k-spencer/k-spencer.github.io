@@ -218,3 +218,44 @@
   function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
   }
+
+  /**
+   * Form Data Handling
+   */
+
+const form = document.querySelector('form')
+form.addEventListener('submit', event => {
+  // prevent the form submit from refreshing the page
+  event.preventDefault();
+ 
+  const { fname, lname, email, message } = event.target;
+  const endpoint = "<https://9gyhibzg2b.execute-api.us-west-1.amazonaws.com/default/sendContactEmail>";
+  const body = JSON.stringify({
+    senderfname: fname.value,
+    senderlname: lname.value,
+    senderEmail: email.value,
+    message: message.value
+
+  });
+
+  const requestOptions = {
+    method: "POST",
+    body
+  };
+
+  fetch(endpoint, requestOptions)
+  .then((response) => {
+    if (!response.ok) throw new Error("Error in fetch");
+    return response.json();
+  })
+  .then((response) => {
+    document.getElementById("result-text").innerText =
+      "Email sent successfully!";
+  })
+  .catch((error) => {
+    document.getElementById("result-text").innerText =
+      "An unkown error occured.";
+  });
+  
+  
+})
